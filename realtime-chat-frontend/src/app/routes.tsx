@@ -4,6 +4,7 @@ import { AppLayout } from '../components/layout/AppLayout';
 import { LoginPage } from '../pages/LoginPage';
 import { RegisterPage } from '../pages/RegisterPage';
 import { ChatPage } from '../pages/ChatPage';
+import { NotFoundPage } from '../pages/NotFoundPage';
 
 const FullPageSpinner = () => (
     <div className="min-h-screen bg-bg-primary flex flex-col items-center justify-center gap-4">
@@ -65,5 +66,5 @@ export const router = createBrowserRouter([
             },
         ],
     },
-    { path: "*", element: <Navigate to="/login" replace /> },
+    { path: "*", element: <NotFoundPage /> },
 ]);
