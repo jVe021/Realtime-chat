@@ -23,9 +23,16 @@ class SocketService {
 
         useSocketStore.getState().setConnectionStatus("connecting");
 
-        const protocol = window.location.protocol === "https:" ? "wss:" : "ws:";
-        const host = import.meta.env.DEV ? "localhost:5000" : window.location.host;
-        const url = `${protocol}//${host}`;
+        const apiUrl = import.meta.env.VITE_API_URL;
+        let url = "";
+
+        if (apiUrl) {
+            url = apiUrl.replace(/^http/, 'ws');
+        } else {
+            const protocol = window.location.protocol === "https:" ? "wss:" : "ws:";
+            const host = import.meta.env.DEV ? "localhost:5000" : window.location.host;
+            url = `${protocol}//${host}`;
+        }
 
         this.socket = new WebSocket(url);
 
