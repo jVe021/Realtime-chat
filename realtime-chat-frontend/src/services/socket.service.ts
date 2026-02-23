@@ -23,7 +23,7 @@ class SocketService {
 
         useSocketStore.getState().setConnectionStatus("connecting");
 
-        const apiUrl = import.meta.env.VITE_API_URL;
+        const apiUrl = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? "https://realtime-chat-backend-p283.onrender.com" : "");
         let url = "";
 
         if (apiUrl) {

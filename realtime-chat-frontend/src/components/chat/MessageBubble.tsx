@@ -15,7 +15,7 @@ export const MessageBubble = memo(({ message, isOwnMessage }: MessageBubbleProps
     const isUploading = message.isOptimistic && message.imageUrl;
     const getImageUrl = (url: string) => {
         if (url.startsWith('http')) return url;
-        const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+        const apiUrl = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? "https://realtime-chat-backend-p283.onrender.com" : "http://localhost:5000");
         return `${apiUrl}${url}`;
     };
 
