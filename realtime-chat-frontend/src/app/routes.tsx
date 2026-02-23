@@ -48,6 +48,10 @@ const GuestRoute = () => {
 
 export const router = createBrowserRouter([
     {
+        path: "/",
+        element: <Navigate to="/login" replace />,
+    },
+    {
         element: <GuestRoute />,
         children: [
             { path: "/login", element: <LoginPage /> },
