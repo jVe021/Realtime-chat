@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+
+    //  Compilation Target
+    "target": "ES2020",
+    "module": "CommonJS",
+
+    // Project Structure
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    // Strictness
+    "strict": true,
+    "noImplicitAny": true,
+
+    // Module Resolution
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+
+    // Node Types
+    "types": ["node"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
