@@ -1,4 +1,4 @@
-# 🚀 Real-Time Chat Application
+
 
 ![React](https://img.shields.io/badge/React-19-blue?logo=react)
 ![Vite](https://img.shields.io/badge/Vite-Build_Tool-646CFF?logo=vite)
@@ -11,6 +11,7 @@
 ![Deployment](https://img.shields.io/badge/Deployment-Vercel%20%7C%20Render-black)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
+# 🚀 Real-Time Chat Application
 
 A full-stack, production-ready real-time chat application built with modern web technologies.  
 This project follows a **monorepo architecture**, containing both frontend and backend services.
