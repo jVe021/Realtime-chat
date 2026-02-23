@@ -1,13 +1,25 @@
 # 🚀 Real-Time Chat Application
 
+![React](https://img.shields.io/badge/React-19-blue?logo=react)
+![Vite](https://img.shields.io/badge/Vite-Build_Tool-646CFF?logo=vite)
+![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?logo=node.js)
+![Express](https://img.shields.io/badge/Express.js-API-black?logo=express)
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?logo=mongodb)
+![WebSockets](https://img.shields.io/badge/WebSockets-Real--Time-orange)
+![JWT](https://img.shields.io/badge/Auth-JWT-red)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4-38B2AC?logo=tailwind-css)
+![Deployment](https://img.shields.io/badge/Deployment-Vercel%20%7C%20Render-black)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+
 A full-stack, production-ready real-time chat application built with modern web technologies.  
 This project follows a **monorepo architecture**, containing both frontend and backend services.
+
 
 🌍 **Live Demo:**  
 Frontend: https://realtimechat-orcin.vercel.app  
 Backend API: https://realtime-chat-backend-p283.onrender.com  
 
----
 
 # ✨ Features
 
