@@ -54,7 +54,7 @@ export const RegisterPage = () => {
         <div className="min-h-screen flex items-center justify-center bg-bg-primary bg-gradient-to-br from-bg-primary to-bg-secondary p-4">
             <div className="w-full max-w-md bg-bg-secondary/80 backdrop-blur-xl border border-border rounded-2xl shadow-2xl shadow-accent/10 p-8">
                 <div className="text-center mb-8">
-                    <h1 className="text-3xl font-bold text-text-primary mb-2">💬 Chat App</h1>
+                    <h1 className="text-3xl font-bold text-text-primary mb-2">RealTime Chat</h1>
                     <p className="text-text-secondary">Create a new account</p>
                 </div>
 

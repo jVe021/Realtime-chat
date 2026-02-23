@@ -87,7 +87,7 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
                 {/* Header */}
                 <div className="p-4 border-b border-border">
                     <h2 className="text-xl font-bold flex items-center gap-2 text-text-primary">
-                        💬 Chat App
+                        RealTime Chat
                     </h2>
                     <div className="mt-2 text-sm text-text-secondary flex items-center gap-2">
                         <span className="w-2 h-2 rounded-full bg-success"></span>
