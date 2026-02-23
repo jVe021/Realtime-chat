@@ -39,36 +39,35 @@ Backend API: https://realtime-chat-backend-p283.onrender.com
 
 This repository contains two main applications:
 
-root/
-│
-├── realtime-chat-frontend/
-└── realtime-chat-backend/
+- root/
+- │
+- ├── realtime-chat-frontend/
+- └── realtime-chat-backend/
 
-
-flowchart LR
-
-  subgraph Client
-    A["React Frontend  
-    (Vite + Tailwind)  
-    Deployed on Vercel"]
-  end
-
-  subgraph Server
-    B["Node.js + Express API  
-    Deployed on Render"]
-    C["WebSocket Server  
-    Real-time Messaging"]
-  end
-
-  subgraph Database
-    D["MongoDB  
-    Message & User Storage"]
-  end
-
-  A -->|REST API (JWT Auth)| B
-  A -->|WebSocket Connection| C
-  B -->|Read/Write| D
-  C -->|Store Messages| D
+          ┌───────────────────────────┐
+          │        Frontend           │
+          │   React + Vite + Tailwind │
+          │   Deployed on Vercel      │
+          └─────────────┬─────────────┘
+                        │
+  REST API (JWT Auth)   │   WebSocket (Real-time)
+                        │
+            ┌────────────▼────────────┐
+            │        Backend          │
+            │   Node.js + Express     │
+            │   Deployed on Render    │
+            ├────────────┬────────────┤
+            │            │            │
+            │        WebSocket        │
+            │        Server           │
+            └────────────┬────────────┘
+                        │
+                        │  Read / Write
+                        ▼
+          ┌───────────────────────────┐
+          │        MongoDB            │
+          │  Users, Rooms, Messages  │
+          └───────────────────────────┘
 
 ---
 
