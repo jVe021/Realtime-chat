@@ -99,15 +99,6 @@ PORT=10000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_super_secret_key
 
----
-
-# 🗄️ Database Setup (MongoDB Atlas)
-
-1. Create a free **M0 cluster**
-2. Create a **Database User**
-   - Role: Read and write to any database
-3. Add IP Access:
-
 
 ---
 
