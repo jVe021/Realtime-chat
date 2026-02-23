@@ -35,15 +35,22 @@ Backend API: https://realtime-chat-backend-p283.onrender.com
 
 ---
 
-# 🏗️ Architecture
+## 🏗 Repository Structure
 
 This repository contains two main applications:
 
-- root/
-- │
-- ├── realtime-chat-frontend/
-- └── realtime-chat-backend/
+```
+root/
+│
+├── realtime-chat-frontend/
+└── realtime-chat-backend/
+```
 
+---
+
+## 🏗️ System Architecture
+
+```
           ┌───────────────────────────┐
           │        Frontend           │
           │   React + Vite + Tailwind │
@@ -66,8 +73,9 @@ This repository contains two main applications:
                         ▼
           ┌───────────────────────────┐
           │        MongoDB            │
-          │  Users, Rooms, Messages  │
+          │  Users, Rooms, Messages   │
           └───────────────────────────┘
+```
 
 ---
 
