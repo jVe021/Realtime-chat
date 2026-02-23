@@ -45,6 +45,31 @@ root/
 └── realtime-chat-backend/
 
 
+flowchart LR
+
+  subgraph Client
+    A["React Frontend  
+    (Vite + Tailwind)  
+    Deployed on Vercel"]
+  end
+
+  subgraph Server
+    B["Node.js + Express API  
+    Deployed on Render"]
+    C["WebSocket Server  
+    Real-time Messaging"]
+  end
+
+  subgraph Database
+    D["MongoDB  
+    Message & User Storage"]
+  end
+
+  A -->|REST API (JWT Auth)| B
+  A -->|WebSocket Connection| C
+  B -->|Read/Write| D
+  C -->|Store Messages| D
+
 ---
 
 ## 🖥️ Frontend — React + Vite
